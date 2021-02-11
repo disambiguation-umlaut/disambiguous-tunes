@@ -38,6 +38,22 @@ export const useRelease = (id) => {
   };
 };
 
+export const useRecording = (id) => {
+  const [loading, setLoading] = useState(true);
+  const [recordings, setRecordings] = useState([]);
 
+  useEffect(() => {
+    getRecording(id)
+      .then(recordings => {
+        setRecordings(recordings);
+        setLoading(false);
+      });
+  }, [id]);
+
+  return {
+    loading,
+    recordings
+  };
+};
 
 
