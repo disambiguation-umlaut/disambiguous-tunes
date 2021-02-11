@@ -1,5 +1,10 @@
 import React from 'react';
+import Artist from '../Artist/Artist';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div>
+      <Artist />
+    </div>
+  );
 }
