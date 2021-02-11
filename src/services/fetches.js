@@ -14,3 +14,36 @@ export const getArtist = (name, offset) => {
     })));
 };
 
+// export const getCoverArt = (id) => {
+//   return fetch(`${URL}release?artist=${id}&fmt=json`)
+//     .then(res => res.json())
+//     .then(({ releases }) => releases.map(release => ({
+//       id: release.id,
+//       cover: release['cover-art-archive'].artwork
+//     })));
+// };
+
+export const getRelease = (id) => {
+  return fetch(`${URL}release?artist=${id}&fmt=json`)
+    .then(res => res.json())
+    .then(({ releases }) => releases.map(release => ({
+      id: release.id,
+      title: release.title,
+      date: release.date,
+      cover: release['cover-art-archive'].artwork
+    })));
+};
+
+export const getRecording = (id) => {
+  return fetch(`${URL}recording?release=${id}&fmt=json`)
+    .then(res => res.json())
+    .then(({ recordings }) => recordings.map(recording => ({
+      title: recording.title,
+      length: recording.length
+    })));
+};
+
+export const getLyrics = (artist, title) => {
+  return fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`)
+    .then(res => res.json());
+};
