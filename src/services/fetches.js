@@ -1,3 +1,5 @@
+import { listenerCount } from "process";
+
 const URL = 'http://musicbrainz.org/ws/2/';
 
 // offset = (pageNumber * 25) + 1
@@ -34,4 +36,11 @@ export const getRelease = (id) => {
     })));
 };
 
-
+export const getRecording = (id) => {
+  return fetch(`${URL}recording?release=${id}&fmt=json`)
+    .then(res => res.json())
+    .then(({ recordings }) => recordings.map(recording => ({
+      title: recording.title,
+      length: recording.length
+    })));
+};
