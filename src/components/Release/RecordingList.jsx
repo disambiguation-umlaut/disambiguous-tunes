@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes, { shape } from 'prop-types';
+import PropTypes from 'prop-types';
 import RecordingItem from './RecordingItem';
 
-const RecordingList = ({ recordings }) => {
+const RecordingList = ({ recordings }, { artist }) => {
 
   const recordingElements = recordings.map(recording => (
     <div key={recording.id}>
-      <Link to={`/lyrics/${recording.artist}/${recording.title}`}>
+      <Link to={`/lyrics/${artist.name}/${recording.title}`}>
         <RecordingItem
           title={recording.title}
           length={recording.length}
