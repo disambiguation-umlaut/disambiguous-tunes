@@ -56,4 +56,21 @@ export const useRecording = (id) => {
   };
 };
 
+export const useLyrics = (artist, title) => {
+  const [loading, setLoading] = useState(true);
+  const [lyrics, setLyrics] = useState([]);
+
+  useEffect(() => {
+    getLyrics(artist, title)
+      .then(lyrics => {
+        setLyrics(lyrics);
+        setLoading(false);
+      });
+  }, [artist, title]);
+
+  return {
+    loading,
+    lyrics
+  };
+};
 
