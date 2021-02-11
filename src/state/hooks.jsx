@@ -20,6 +20,24 @@ export const useArtists = (query, offset) => {
   };
 };
 
+export const useRelease = (id) => {
+  const [loading, setLoading] = useState(true);
+  const [releases, setReleases] = useState([]);
+
+  useEffect(() => {
+    getRelease(id)
+      .then(releases => {
+        setReleases(releases);
+        setLoading(false);
+      });
+  }, [id]);
+
+  return {
+    loading,
+    releases
+  };
+};
+
 
 
 
