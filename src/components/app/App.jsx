@@ -12,11 +12,12 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path='/' component={LandingPage} />
-          <Route path='/artist/:id' component={ArtistPage} />
-          <Route path='/release/:id' component={ReleasePage} />
-          <Route path='/lyrics/:artist/:title' component={LyricsPage} />
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/artist/:id" component={ArtistPage} />
+          <Route path="/release/:id" component={ReleasePage} />
+          <Route path="/lyrics/:artist/:title" component={LyricsPage} />
         </Switch>
       </Router>
     </>
+  );
 }
