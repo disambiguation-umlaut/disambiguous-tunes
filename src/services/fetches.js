@@ -1,5 +1,3 @@
-import { listenerCount } from "process";
-
 const URL = 'http://musicbrainz.org/ws/2/';
 
 // offset = (pageNumber * 25) + 1
@@ -43,4 +41,9 @@ export const getRecording = (id) => {
       title: recording.title,
       length: recording.length
     })));
+};
+
+export const getLyrics = (artist, title) => {
+  return fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`)
+    .then(res => res.json());
 };
