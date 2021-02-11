@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Song = ({ lyrics }) => (
+const Lyrics = ({ lyrics }) => (
   <div>
     <p>{lyrics}</p>  
   </div>
 );
 
-Song.propTypes = {
+Lyrics.propTypes = {
   lyrics: PropTypes.string.isRequired
 };
 
-export default Song;
+export default Lyrics;
