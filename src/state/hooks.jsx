@@ -22,7 +22,7 @@ export const useArtists = (query, pageNumber) => {
   };
 };
 
-export const useRelease = (id) => {
+export const useReleases = (id) => {
   const [loading, setLoading] = useState(true);
   const [releases, setReleases] = useState([]);
 

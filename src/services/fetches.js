@@ -1,7 +1,5 @@
 const URL = 'http://musicbrainz.org/ws/2/';
 
-// offset = (pageNumber * 25) + 1
-
 export const getArtist = (name, offset) => {
   return fetch(`${URL}artist?query=${name}&fmt=json&limit=25&offset=${offset}`)
     .then(res => res.json())
@@ -13,15 +11,6 @@ export const getArtist = (name, offset) => {
       disambig: artist.disambiguation
     })));
 };
-
-// export const getCoverArt = (id) => {
-//   return fetch(`${URL}release?artist=${id}&fmt=json`)
-//     .then(res => res.json())
-//     .then(({ releases }) => releases.map(release => ({
-//       id: release.id,
-//       cover: release['cover-art-archive'].artwork
-//     })));
-// };
 
 export const getRelease = (id) => {
   return fetch(`${URL}release?artist=${id}&fmt=json`)

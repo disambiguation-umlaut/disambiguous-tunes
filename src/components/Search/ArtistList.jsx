@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 import ArtistItem from './ArtistItem';
 
 const ArtistList = ({ artists }) => {
-  const artistElements = artists.map(artist => {
+  const artistElements = artists.map(artist => (
     <div key={artist.id}>
-      <Link to={`/artist/${artist.id}`}>
+      <Link to={`/artist/${artist.name}/${artist.id}`}>
         <ArtistItem
-          artist={artist}
+          {...artist}
         />
       </Link>
-    </div>;
-  });
+    </div>
+  ));
 
   return (
     <div data-testid="artists">

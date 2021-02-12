@@ -12,6 +12,7 @@ const ArtistPage = ({ match }) => {
     <div>
       <ReleaseList
         releases={releases}
+        artist={match.params.name}
       />    
     </div>
   );
@@ -20,7 +21,8 @@ const ArtistPage = ({ match }) => {
 ArtistPage.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      id: PropTypes.string.isRequired
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired
     }).isRequired
   }).isRequired
 };

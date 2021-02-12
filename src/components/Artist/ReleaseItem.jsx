@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 
 const ReleaseItem = ({ release }) => {
-
   
   return (
     <div>
@@ -22,12 +21,12 @@ ReleaseItem.propTypes = {
   release: PropTypes.arrayOf(
     PropTypes.shape(
       {
-        title: PropTypes.string.isRequired, 
-        id: PropTypes.string.isRequired,
-        cover: PropTypes.boolean.isRequired,
-        date: PropTypes.string.isRequired
+        title: PropTypes.string, 
+        id: PropTypes.string,
+        cover: PropTypes.boolean,
+        date: PropTypes.string
       }
-    )).isRequired
+    ))
 };
 
 

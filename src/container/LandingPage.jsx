@@ -1,10 +1,13 @@
 import React from 'react';
 import ArtistList from '../components/Search/ArtistList';
 import { useArtists } from '../state/hooks';
-import PropTypes from 'prop-types';
+import { useLocation } from 'react-router-dom';
 
-const LandingPage = ({ query, pageNumber }) => {
-  const { loading, artists } = useArtists(query, pageNumber);
+const LandingPage = () => {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const { loading, artists } = useArtists(params.get('search'), 1);
+
 
   if(loading) return <p>Loading</p>;
 
@@ -15,11 +18,6 @@ const LandingPage = ({ query, pageNumber }) => {
       />    
     </div>
   );
-};
-
-LandingPage.propTypes = {
-  query: PropTypes.string.isRequired,
-  pageNumber: PropTypes.number.isRequired
 };
 
 export default LandingPage;

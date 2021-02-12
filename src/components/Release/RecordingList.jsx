@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import RecordingItem from './RecordingItem';
 
-const RecordingList = ({ recordings }, { artist }) => {
+const RecordingList = ({ recordings, artist }) => {
 
   const recordingElements = recordings.map(recording => (
     <div key={recording.id}>
-      <Link to={`/lyrics/${artist.name}/${recording.title}`}>
+      <Link to={`/lyrics/${artist}/${recording.title}`}>
         <RecordingItem
           title={recording.title}
           length={recording.length}
@@ -24,6 +24,7 @@ const RecordingList = ({ recordings }, { artist }) => {
 };
 
 RecordingList.propTypes = {
+  artist: PropTypes.string,
   recordings: PropTypes.arrayOf(
     PropTypes.shape(
       {
