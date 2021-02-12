@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 global.fetch = require('node-fetch');
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
@@ -20,7 +21,7 @@ describe('ArtistPage container', () => {
   it('fetches and display a list of releases', async() => {
     render(
       <MemoryRouter>
-        <ArtistPage />
+        <ArtistPage match={{ params: { id: '3ce0a4ca-7e5a-44bf-bffe-913cd1461771' } }} />
       </MemoryRouter>
     );
 
