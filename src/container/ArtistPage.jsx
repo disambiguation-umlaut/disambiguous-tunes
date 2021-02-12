@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ArtistList from '../components/Search/ArtistList';
+import ReleaseList from '../components/Artist/ReleaseList';
 import { useReleases } from '../state/hooks';
 
 const ArtistPage = ({ match }) => {
@@ -10,7 +10,7 @@ const ArtistPage = ({ match }) => {
 
   return (
     <div>
-      <ArtistList
+      <ReleaseList
         releases={releases}
       />    
     </div>

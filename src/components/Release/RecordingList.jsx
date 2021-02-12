@@ -28,7 +28,7 @@ RecordingList.propTypes = {
     PropTypes.shape(
       {
         title: PropTypes.string.isRequired, 
-        length: PropTypes.string.isRequired
+        length: PropTypes.number.isRequired
       }
     )).isRequired
 };
