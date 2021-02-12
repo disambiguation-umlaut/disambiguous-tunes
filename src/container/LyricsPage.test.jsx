@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable max-len */
 global.fetch = require('node-fetch');
 import React from 'react';

@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+/* eslint-disable no-undef */
 global.fetch = require('node-fetch');
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
