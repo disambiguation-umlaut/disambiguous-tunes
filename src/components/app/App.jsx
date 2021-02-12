@@ -14,7 +14,7 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" 
+          <Route exact path="/"
             component={LandingPage} 
           />
           <Route path="/artist/:name/:id" 

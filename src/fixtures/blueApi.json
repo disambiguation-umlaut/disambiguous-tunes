@@ -1,0 +1,51 @@
+{
+    "created": "2021-02-12T22:52:10.205Z",
+    "count": 5042,
+    "offset": 2,
+    "artists": [
+        {
+            "id": "3ce0a4ca-7e5a-44bf-bffe-913cd1461771",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 91,
+            "name": "Blue",
+            "sort-name": "Blue",
+            "country": "GB",
+            "area": {
+                "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United Kingdom",
+                "sort-name": "United Kingdom",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "begin-area": {
+                "id": "c279f805-01f8-46f5-99cf-51f165a1adad",
+                "type": "City",
+                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+                "name": "Glasgow",
+                "sort-name": "Glasgow",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "Scottish rock band",
+            "life-span": {
+                "begin": "1973",
+                "ended": null
+            },
+            "tags": [
+                {
+                    "count": 1,
+                    "name": "pop rock"
+                },
+                {
+                    "count": 1,
+                    "name": "power pop"
+                }
+            ]
+        }
+    ]
+}

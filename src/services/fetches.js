@@ -10,6 +10,7 @@ export const getArtist = (name, offset) => {
       end: artist['life-span'].ended,
       disambig: artist.disambiguation
     })));
+  // throw error if null
 };
 
 export const getRelease = (id) => {
