@@ -25,6 +25,8 @@ describe('LyricsPage container', () => {
       </MemoryRouter>
     );
 
+    screen.getByText('Loading');
+
     const lyrics = await screen.findByTestId('lyrics');
 
     return waitFor(() => {
