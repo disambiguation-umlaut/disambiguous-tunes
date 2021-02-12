@@ -7,11 +7,13 @@ import { useLyrics } from '../state/hooks';
 const LyricsPage = ({ match }) => {
   const { lyrics, loading } = useLyrics(match.params.artist, match.params.title);
 
+  console.log(lyrics);
+
   if(loading) return <p>Loading</p>;
 
   return (
     <div>
-      <Lyrics lyrics={lyrics} />
+      <Lyrics lyrics={lyrics.lyrics} />
     </div>
   );
 };

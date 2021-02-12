@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReleaseItem from './ReleaseItem';
-import { Link } from 'react-router-dom ';
+import { Link } from 'react-router-dom';
 
-const ReleaseList = ({ releases }, { artist }) => {
-  const releaseElements = releases.map(release => {
+const ReleaseList = ({ releases, artist }) => {
+  const releaseElements = releases.map(release => (
     <div key={release.id}>
-      <Link to={`/release/${release.id}`}>
+      <Link to={`/release/${artist}/${release.id}`}>
         <ReleaseItem
           release={release}
           artist={artist} 
         />
       </Link>
-    </div>;
-  });
+    </div>
+  ));
 
   return (
     <div data-testid="releases">
@@ -23,15 +23,16 @@ const ReleaseList = ({ releases }, { artist }) => {
 };
 
 ReleaseList.propTypes = {
+  artist: PropTypes.string.isRequired,
   releases: PropTypes.arrayOf(
     PropTypes.shape(
       {
-        id: PropTypes.string.isRequired, 
-        title: PropTypes.string.isRequired,
-        cover: PropTypes.boolean.isRequired,
-        date: PropTypes.string.isRequired
+        id: PropTypes.string, 
+        title: PropTypes.string,
+        cover: PropTypes.boolean,
+        date: PropTypes.string
       }
-    )).isRequired
+    ))
 };
 
 export default ReleaseList;

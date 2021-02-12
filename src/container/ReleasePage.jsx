@@ -4,7 +4,7 @@ import { useRecording } from '../state/hooks';
 import RecordingList from '../components/Release/RecordingList';
 
 
-const ReleasePage = ({ match }, { artist }) => {
+const ReleasePage = ({ match }) => {
   const { loading, recordings } = useRecording(match.params.id);
   
   if(loading) return <p>Loading</p>;
@@ -13,7 +13,7 @@ const ReleasePage = ({ match }, { artist }) => {
     <div>
       <RecordingList 
         recordings={recordings}
-        artist = {artist}
+        artist = {match.params.name}
       />
     </div>
   );
@@ -23,6 +23,7 @@ ReleasePage.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
       id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired
     }).isRequired
   }).isRequired
 };

@@ -2,9 +2,11 @@
 import { useState, useEffect } from 'react';
 import { getArtist, getRelease, getRecording, getLyrics } from '../services/fetches';
 
-export const useArtists = (query, offset) => {
+export const useArtists = (query, pageNumber) => {
   const [loading, setLoading] = useState(true);
   const [artists, setArtists] = useState([]);
+
+  const offset = (pageNumber * 25) - 24;
 
   useEffect(() => {
     getArtist(query, offset)
@@ -20,7 +22,7 @@ export const useArtists = (query, offset) => {
   };
 };
 
-export const useRelease = (id) => {
+export const useReleases = (id) => {
   const [loading, setLoading] = useState(true);
   const [releases, setReleases] = useState([]);
 
