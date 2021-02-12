@@ -8,7 +8,7 @@ import LyricsPage from '../../container/LyricsPage';
 
 export default function App() {
   return (
-    <>
+    <div>
       <Router>
         <Header />
         <Switch>
@@ -18,6 +18,6 @@ export default function App() {
           <Route path="/lyrics/:artist/:title" component={LyricsPage} />
         </Switch>
       </Router>
-    </>
+    </div>
   );
 }
