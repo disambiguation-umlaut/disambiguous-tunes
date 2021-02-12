@@ -19,7 +19,7 @@ describe('LandingPage container', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
 
-  it.only('fetches and displays a list of artists', async() => {
+  it('fetches and displays a list of artists', async() => {
     render(
       <MemoryRouter>
         <LandingPage />

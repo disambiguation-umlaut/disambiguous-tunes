@@ -25,12 +25,12 @@ ArtistList.propTypes = {
   artists: PropTypes.arrayOf(
     PropTypes.shape(
       {
-        name: PropTypes.string.isRequired,
-        begin: PropTypes.string.isRequired,
-        end: PropTypes.string.isRequired,
-        disambig: PropTypes.string.isRequired
+        name: PropTypes.string,
+        begin: PropTypes.string,
+        end: PropTypes.string,
+        disambig: PropTypes.string
       }
-    )).isRequired
+    ))
 };
 
 export default ArtistList;
