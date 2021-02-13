@@ -6,9 +6,9 @@ export const getArtist = (name, offset) => {
     .then(({ artists }) => artists.map(artist => ({
       id: artist.id,
       name: artist.name,
-      begin: artist['life-span'].begin,
-      end: artist['life-span'].ended,
-      disambig: artist.disambiguation
+      begin: artist['life-span'].begin ? artist['life-span'].begin : '???',
+      end: artist['life-span'].end ? artist['life-span'].end : '???',
+      disambig: artist.disambiguation ? artist.disambiguation : '???'
     })));
 };
 
