@@ -5,6 +5,7 @@ import { getArtist, getRelease, getRecording, getLyrics } from '../services/fetc
 export const useArtists = (query, pageNumber) => {
   const [loading, setLoading] = useState(true);
   const [artists, setArtists] = useState([]);
+  const [count, setCount] = useState(1);
 
   const offset = (pageNumber * 25) - 24;
 
@@ -22,7 +23,9 @@ export const useArtists = (query, pageNumber) => {
 
   return {
     loading,
-    artists
+    artists,
+    count,
+    setCount
   };
 };
 
