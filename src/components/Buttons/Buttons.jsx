@@ -4,8 +4,13 @@ import PropTypes from 'prop-types';
 
 const Buttons = ({ count, setCount }) => {
 
-  const handleIncrease = () => setCount(count + 1);
-  const handleDecrease = () => setCount(count - 1);
+  const handleIncrease = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrease = () => {
+    setCount(count - 1);
+  };
 
   return (
     <div>
@@ -31,3 +36,6 @@ Buttons.propTypes = {
   count: PropTypes.number,
   setCount: PropTypes.func
 };
+
+export default Buttons;
+

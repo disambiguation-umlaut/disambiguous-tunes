@@ -7,7 +7,13 @@ export const useArtists = (query, pageNumber) => {
   const [artists, setArtists] = useState([]);
   const [count, setCount] = useState(1);
 
+  console.log('Pagenumber: ');
+  console.log(pageNumber);
+
   const offset = (pageNumber * 25) - 24;
+
+  console.log('Offset Hook: ');
+  console.log(offset);
 
   useEffect(() => {
     if(query === null) {
