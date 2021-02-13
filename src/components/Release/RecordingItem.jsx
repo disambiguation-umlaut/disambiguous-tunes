@@ -12,7 +12,7 @@ const RecordingItem = ({ title, length }) => {
 
 RecordingItem.propTypes = {
   title: PropTypes.string.isRequired,
-  length: PropTypes.string.isRequired
+  length: PropTypes.number.isRequired
 };
 
 export default RecordingItem;

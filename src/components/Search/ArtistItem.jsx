@@ -12,10 +12,10 @@ const ArtistItem = ({ name, begin, end, disambig }) => {
 };
 
 ArtistItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  begin: PropTypes.string.isRequired,
-  end: PropTypes.string.isRequired,
-  disambig: PropTypes.string.isRequired
+  name: PropTypes.string,
+  begin: PropTypes.string,
+  end: PropTypes.string,
+  disambig: PropTypes.string
 };
 
 export default ArtistItem;

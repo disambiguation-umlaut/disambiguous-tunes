@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Lyrics = ({ lyrics }) => (
-  <div>
+  <div data-testid="lyrics">
     <p>{lyrics}</p>  
   </div>
 );

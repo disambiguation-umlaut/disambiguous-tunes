@@ -9,7 +9,7 @@ const LandingPage = () => {
   const { loading, artists } = useArtists(params.get('search'), 1);
 
 
-  if(loading) return <p>Loading</p>;
+  if(loading) return <p data-testid="loading">Loading</p>;
 
   return (
     <div>
