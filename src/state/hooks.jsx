@@ -80,3 +80,22 @@ export const useLyrics = (artist, title) => {
   };
 };
 
+export const useButtons = () => {
+  const [count, setCount] = useState(1);
+
+
+  const handleIncrease = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrease = () => {
+    setCount(count - 1);
+  };
+
+  return {
+    count,
+    setCount,
+    handleIncrease,
+    handleDecrease
+  };
+};

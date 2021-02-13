@@ -6,9 +6,9 @@ export const getArtist = (name, offset) => {
     .then(({ artists }) => artists.map(artist => ({
       id: artist.id,
       name: artist.name,
-      begin: artist['life-span'].begin,
-      end: artist['life-span'].ended,
-      disambig: artist.disambiguation
+      begin: artist['life-span'].begin ? artist['life-span'].begin : '???',
+      end: artist['life-span'].end ? artist['life-span'].end : '???',
+      disambig: artist.disambiguation ? artist.disambiguation : '???'
     })));
   // throw error if null
 };
@@ -18,8 +18,8 @@ export const getRelease = (id) => {
     .then(res => res.json())
     .then(({ releases }) => releases.map(release => ({
       id: release.id,
-      title: release.title,
-      date: release.date,
+      title: release.title ? release.title : '???',
+      date: release.date ? release.date : '???',
       cover: release['cover-art-archive'].artwork
     })));
 };
@@ -28,8 +28,8 @@ export const getRecording = (id) => {
   return fetch(`${URL}recording?release=${id}&fmt=json`)
     .then(res => res.json())
     .then(({ recordings }) => recordings.map(recording => ({
-      title: recording.title,
-      length: recording.length
+      title: recording.title ? recording.title : '???',
+      length: recording.length ? recording.length : '???'
     })));
 };
 
