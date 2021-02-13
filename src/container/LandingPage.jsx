@@ -2,27 +2,34 @@
 import React from 'react';
 import ArtistList from '../components/Search/ArtistList';
 import Buttons from '../components/Buttons/Buttons';
-import { useArtists } from '../state/hooks';
+import { useArtists, useButtons } from '../state/hooks';
 import { useLocation } from 'react-router-dom';
 
 const LandingPage = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const { loading, artists, count, setCount } = useArtists(params.get('search'), 2);
-
-  
+  const { count, setCount, handleIncrease, handleDecrease } = useButtons();
+  const { loading, artists } = useArtists(params.get('search'), count);
 
   if(loading) return <p data-testid="loading">Loading</p>;
 
   return (
     <div>
-      <ArtistList
-        artists={artists}
-      />    
       <Buttons 
         count={count}
         setCount={setCount}
+        handleIncrease={handleIncrease}
+        handleDecrease={handleDecrease}
       />
+      <ArtistList
+        artists={artists}
+      /> 
+      <Buttons 
+        count={count}
+        setCount={setCount}
+        handleIncrease={handleIncrease}
+        handleDecrease={handleDecrease}
+      />   
     </div>
   );
 };

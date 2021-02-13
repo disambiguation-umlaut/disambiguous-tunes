@@ -2,15 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Buttons = ({ count, setCount }) => {
-
-  const handleIncrease = () => {
-    setCount(count + 1);
-  };
-
-  const handleDecrease = () => {
-    setCount(count - 1);
-  };
+const Buttons = ({ count, handleIncrease, handleDecrease }) => {
 
   return (
     <div>
@@ -34,7 +26,9 @@ const Buttons = ({ count, setCount }) => {
 
 Buttons.propTypes = {
   count: PropTypes.number,
-  setCount: PropTypes.func
+  setCount: PropTypes.func,
+  handleIncrease: PropTypes.func,
+  handleDecrease: PropTypes.func
 };
 
 export default Buttons;
