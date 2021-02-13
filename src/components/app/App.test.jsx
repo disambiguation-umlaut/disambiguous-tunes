@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
+import blueReleaseApi from '../../fixtures/blueReleaseApi.json';
 import App from './App';
 import Header from '../Header/Header';
 import ReleaseItem from '../Artist/ReleaseItem';
@@ -25,7 +26,9 @@ describe('App component', () => {
   it('renders ReleaseList', () => {
     const { asFragment } = render(
       <BrowserRouter>
-        <ReleaseList />
+        <ReleaseList 
+          releases={blueReleaseApi.releases} 
+          artist={'Blue Blue Blue'}/>
       </BrowserRouter>
     );
     expect(asFragment()).toMatchSnapshot();
