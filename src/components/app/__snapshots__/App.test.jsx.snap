@@ -9,9 +9,9 @@ exports[`App component renders App 1`] = `
     <a
       href="/"
     >
-      <span>
+      <button>
         Back to Home
-      </span>
+      </button>
     </a>
     <div>
       <form>
@@ -27,9 +27,33 @@ exports[`App component renders App 1`] = `
     </div>
   </div>
   <div>
+    <div>
+      <div>
+        <button>
+          Next
+        </button>
+        <span
+          data-testid="span"
+        >
+          Page 1
+        </span>
+      </div>
+    </div>
     <div
       data-testid="artists"
     />
+    <div>
+      <div>
+        <button>
+          Next
+        </button>
+        <span
+          data-testid="span"
+        >
+          Page 1
+        </span>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -79,9 +103,9 @@ exports[`App component renders Header 1`] = `
     <a
       href="/"
     >
-      <span>
+      <button>
         Back to Home
-      </span>
+      </button>
     </a>
     <div>
       <form>

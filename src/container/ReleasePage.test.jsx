@@ -19,7 +19,7 @@ describe('ReleasePage container', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
 
-  it.skip('fetches and display a list of releases', async() => {
+  it('fetches and display a list of releases', async() => {
     render(
       <MemoryRouter>
         <ReleasePage match={{ params: { id: '12503eef-7fca-4322-9012-2057995aaba7' } }} />
