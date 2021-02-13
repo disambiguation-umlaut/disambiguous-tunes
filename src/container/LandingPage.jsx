@@ -1,13 +1,17 @@
+/* eslint-disable max-len */
 import React from 'react';
 import ArtistList from '../components/Search/ArtistList';
+import Buttons from '../components/Buttons/Buttons';
 import { useArtists } from '../state/hooks';
 import { useLocation } from 'react-router-dom';
 
 const LandingPage = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const { loading, artists } = useArtists(params.get('search'), 1);
+  const { loading, artists, count, setCount } = useArtists(params.get('search'), count);
 
+  console.log('Count: ');
+  console.log(count);
 
   if(loading) return <p data-testid="loading">Loading</p>;
 
@@ -16,6 +20,10 @@ const LandingPage = () => {
       <ArtistList
         artists={artists}
       />    
+      <Buttons 
+        count={count}
+        setCount={setCount}
+      />
     </div>
   );
 };

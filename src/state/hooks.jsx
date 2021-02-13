@@ -5,8 +5,15 @@ import { getArtist, getRelease, getRecording, getLyrics } from '../services/fetc
 export const useArtists = (query, pageNumber) => {
   const [loading, setLoading] = useState(true);
   const [artists, setArtists] = useState([]);
+  const [count, setCount] = useState(1);
+
+  console.log('Pagenumber: ');
+  console.log(pageNumber);
 
   const offset = (pageNumber * 25) - 24;
+
+  console.log('Offset Hook: ');
+  console.log(offset);
 
   useEffect(() => {
     if(query === null) {
@@ -22,7 +29,9 @@ export const useArtists = (query, pageNumber) => {
 
   return {
     loading,
-    artists
+    artists,
+    count,
+    setCount
   };
 };
 
