@@ -34,4 +34,13 @@ describe('App component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it('renders ReleaseItem', () => {
+    const { asFragment } = render(
+      <BrowserRouter>
+        <ReleaseItem 
+          release={blueReleaseApi.releases[0]} />
+      </BrowserRouter>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
