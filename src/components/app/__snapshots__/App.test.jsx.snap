@@ -34,6 +34,30 @@ exports[`App component renders App 1`] = `
 </DocumentFragment>
 `;
 
+exports[`App component renders ArtistList 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="artists"
+  >
+    <div>
+      <a
+        href="/artist/Blue/3ce0a4ca-7e5a-44bf-bffe-913cd1461771"
+      >
+        <div>
+          <h2>
+            Blue
+          </h2>
+          <p>
+             - 
+          </p>
+          <p />
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`App component renders Header 1`] = `
 <DocumentFragment>
   <div>

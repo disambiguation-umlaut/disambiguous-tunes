@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import blueReleaseApi from '../../fixtures/blueReleaseApi.json';
 import lyricsApi from '../../fixtures/lyricsApi.json';
 import blueRecordingApi from '../../fixtures/blueRecordingApi.json';
+import blueApi from '../../fixtures/blueApi.json';
 import App from './App';
 import Header from '../Header/Header';
 import ReleaseItem from '../Artist/ReleaseItem';
@@ -11,6 +12,8 @@ import ReleaseList from '../Artist/ReleaseList';
 import Lyrics from '../Lyrics/Lyrics';
 import RecordingItem from '../Release/RecordingItem';
 import RecordingList from '../Release/RecordingList';
+import ArtistItem from '../Search/ArtistItem';
+import ArtistList from '../Search/ArtistList';
 
 describe('App component', () => {
   afterEach(() => cleanup());
@@ -76,6 +79,16 @@ describe('App component', () => {
         <RecordingItem 
           title={blueRecordingApi.recordings[0].title} 
           length={blueRecordingApi.recordings[0].length}/>
+      </BrowserRouter>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('renders ArtistList', () => {
+    const { asFragment } = render(
+      <BrowserRouter>
+        <ArtistList 
+          artists={blueApi.artists} />
       </BrowserRouter>
     );
     expect(asFragment()).toMatchSnapshot();
