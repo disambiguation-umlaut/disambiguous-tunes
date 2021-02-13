@@ -25,6 +25,7 @@ describe('ReleasePage container', () => {
         <ReleasePage match={{ params: { id: '12503eef-7fca-4322-9012-2057995aaba7' } }} />
       </MemoryRouter>
     );
+    screen.getByText('Loading');
 
     const listOfRecordings = await screen.findByTestId('recordings');
 
