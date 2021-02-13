@@ -69,5 +69,16 @@ describe('App component', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('renders RecordingItem', () => {
+    const { asFragment } = render(
+      <BrowserRouter>
+        <RecordingItem 
+          title={blueRecordingApi.recordings[0].title} 
+          length={blueRecordingApi.recordings[0].length}/>
+      </BrowserRouter>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
   
 });

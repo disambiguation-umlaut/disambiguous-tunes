@@ -117,6 +117,19 @@ Oh freeze on freeze on freeze on bone to bone
 </DocumentFragment>
 `;
 
+exports[`App component renders RecordingItem 1`] = `
+<DocumentFragment>
+  <div>
+    <p>
+      Another Night Time Flight
+    </p>
+    <p>
+      237000
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`App component renders RecordingList 1`] = `
 <DocumentFragment>
   <div
