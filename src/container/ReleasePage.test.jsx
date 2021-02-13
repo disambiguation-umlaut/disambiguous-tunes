@@ -11,7 +11,7 @@ import { setupServer } from 'msw/node';
 
 const server = setupServer(
   rest.get('http://musicbrainz.org/ws/2/recording', (req, res, ctx) => {
-    return res(ctx.json(blueRecordingApi));
+    return res(ctx.json(blueRecordingApi.recordings));
   })
 );
 
@@ -22,9 +22,10 @@ describe('ReleasePage container', () => {
   it('fetches and display a list of releases', async() => {
     render(
       <MemoryRouter>
-        <ReleasePage match={{ params: { id: '12503eef-7fca-4322-9012-2057995aaba7' } }} />
+        <ReleasePage match={{ params: { id: '12503eef-7fca-4322-9012-2057995aaba7', name: 'Andrew' } }} />
       </MemoryRouter>
     );
+    screen.getByText('Loading');
 
     const listOfRecordings = await screen.findByTestId('recordings');
 

@@ -1,6 +1,7 @@
 const URL = 'https://musicbrainz.org/ws/2/';
 
 export const getArtist = (name, offset) => {
+
   return fetch(`${URL}artist?query=${name}&fmt=json&limit=25&offset=${offset}`)
     .then(res => res.json())
     .then(({ artists }) => artists.map(artist => ({
@@ -10,7 +11,6 @@ export const getArtist = (name, offset) => {
       end: artist['life-span'].end ? artist['life-span'].end : '???',
       disambig: artist.disambiguation ? artist.disambiguation : '???'
     })));
-  // throw error if null
 };
 
 export const getRelease = (id) => {
