@@ -8,10 +8,9 @@ import { useLocation } from 'react-router-dom';
 const LandingPage = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const { loading, artists, count, setCount } = useArtists(params.get('search'), count);
+  const { loading, artists, count, setCount } = useArtists(params.get('search'), 2);
 
-  console.log('Count: ');
-  console.log(count);
+  
 
   if(loading) return <p data-testid="loading">Loading</p>;
 
