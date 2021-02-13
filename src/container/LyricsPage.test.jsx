@@ -19,7 +19,7 @@ describe('LyricsPage container', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
 
-  it.skip('fetches and displays lyrics', async() => {
+  it('fetches and displays lyrics', async() => {
     render(
       <MemoryRouter>
         <LyricsPage match={{ params: { artist: 'Blue Oyster Cult', title: 'Baby Ice Dog' } }} />
