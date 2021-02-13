@@ -26,12 +26,39 @@ exports[`App component renders App 1`] = `
       </form>
     </div>
   </div>
-  <div
-    data-testid="artists"
-  >
+  <div>
     <div
       data-testid="artists"
     />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders Header 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      DISAMBIGUOUS TUNES
+    </h1>
+    <a
+      href="/"
+    >
+      <span>
+        Back to Home
+      </span>
+    </a>
+    <div>
+      <form>
+        <input
+          placeholder="Search..."
+          type="text"
+          value=""
+        />
+        <button>
+          Search
+        </button>
+      </form>
+    </div>
   </div>
 </DocumentFragment>
 `;
