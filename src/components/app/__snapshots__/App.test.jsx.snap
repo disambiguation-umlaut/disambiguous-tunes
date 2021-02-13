@@ -63,6 +63,76 @@ exports[`App component renders Header 1`] = `
 </DocumentFragment>
 `;
 
+exports[`App component renders Lyrics 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="lyrics"
+  >
+    <p>
+      I had this bitch you see, she made lies to me
+Her deceit, oh, it gave me a chill
+But I found out now, that baby that baby ice dog
+She said, we would wed in Mongolian country
+Lilies shoot free, but she was snowing me
+
+In the mountains, oh, her intent was all too clear
+
+
+
+It was quite a sin, how the ice caved in
+
+I was numb, I could not assist
+
+Baby ice went down through cold cold cold ground
+
+I said baby, that's the breaks
+
+
+
+Leading me around like broke down hound dog
+
+Crossing me once too often
+
+Now she's bound for a lower station
+
+She crossed me once too often
+
+And now the ladies all fear this Mongolian man
+
+With ice down his face you know I could get them involved
+
+In unnatural acts with the aid of my cold cold stare
+
+
+
+They'd like to make it with my big black dog
+
+But they just don't know how to ask
+
+You know they'd like to try anything that comes into your mind
+
+Oh freeze on freeze on freeze on bone to bone
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders ReleaseItem 1`] = `
+<DocumentFragment>
+  <div>
+    <h2>
+      Another Night Time Flight
+    </h2>
+    <p>
+      no cover available
+    </p>
+    <p>
+      2009-06-28
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`App component renders ReleaseList 1`] = `
 <DocumentFragment>
   <div

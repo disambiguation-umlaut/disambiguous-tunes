@@ -2,10 +2,12 @@ import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import blueReleaseApi from '../../fixtures/blueReleaseApi.json';
+import lyricsApi from '../../fixtures/lyricsApi.json';
 import App from './App';
 import Header from '../Header/Header';
 import ReleaseItem from '../Artist/ReleaseItem';
 import ReleaseList from '../Artist/ReleaseList';
+import Lyrics from '../Lyrics/Lyrics';
 
 describe('App component', () => {
   afterEach(() => cleanup());
@@ -43,4 +45,16 @@ describe('App component', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('renders Lyrics', () => {
+    const { asFragment } = render(
+      <BrowserRouter>
+        <Lyrics 
+          lyrics={lyricsApi.lyrics} />
+      </BrowserRouter>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  
 });
