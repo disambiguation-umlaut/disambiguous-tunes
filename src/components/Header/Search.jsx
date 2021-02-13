@@ -5,10 +5,6 @@ import { useHistory } from 'react-router-dom';
 const Search = () => {
   const [search, setSearch] = useState('');
   const history = useHistory();
-  
-  console.log(search);
-
-  // history.push('?search=whatever')
 
   const handleSubmit = e => {
     e.preventDefault();

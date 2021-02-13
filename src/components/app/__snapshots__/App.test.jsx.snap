@@ -2,8 +2,737 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <div>
+    <h1>
+      DISAMBIGUOUS TUNES
+    </h1>
+    <a
+      href="/"
+    >
+      <span>
+        Back to Home
+      </span>
+    </a>
+    <div>
+      <form>
+        <input
+          placeholder="Search..."
+          type="text"
+          value=""
+        />
+        <button>
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <div
+      data-testid="artists"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders ArtistItem 1`] = `
+<DocumentFragment>
+  <div>
+    <h2 />
+    <p>
+       - 
+    </p>
+    <p />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders ArtistList 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="artists"
+  >
+    <div>
+      <a
+        href="/artist/Blue/3ce0a4ca-7e5a-44bf-bffe-913cd1461771"
+      >
+        <div>
+          <h2>
+            Blue
+          </h2>
+          <p>
+             - 
+          </p>
+          <p />
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders Header 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      DISAMBIGUOUS TUNES
+    </h1>
+    <a
+      href="/"
+    >
+      <span>
+        Back to Home
+      </span>
+    </a>
+    <div>
+      <form>
+        <input
+          placeholder="Search..."
+          type="text"
+          value=""
+        />
+        <button>
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders Lyrics 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="lyrics"
+  >
+    <p>
+      I had this bitch you see, she made lies to me
+Her deceit, oh, it gave me a chill
+But I found out now, that baby that baby ice dog
+She said, we would wed in Mongolian country
+Lilies shoot free, but she was snowing me
+
+In the mountains, oh, her intent was all too clear
+
+
+
+It was quite a sin, how the ice caved in
+
+I was numb, I could not assist
+
+Baby ice went down through cold cold cold ground
+
+I said baby, that's the breaks
+
+
+
+Leading me around like broke down hound dog
+
+Crossing me once too often
+
+Now she's bound for a lower station
+
+She crossed me once too often
+
+And now the ladies all fear this Mongolian man
+
+With ice down his face you know I could get them involved
+
+In unnatural acts with the aid of my cold cold stare
+
+
+
+They'd like to make it with my big black dog
+
+But they just don't know how to ask
+
+You know they'd like to try anything that comes into your mind
+
+Oh freeze on freeze on freeze on bone to bone
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders RecordingItem 1`] = `
+<DocumentFragment>
+  <div>
+    <p>
+      Another Night Time Flight
+    </p>
+    <p>
+      237000
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders RecordingList 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="recordings"
+  >
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Another Night Time Flight"
+      >
+        <div>
+          <p>
+            Another Night Time Flight
+          </p>
+          <p>
+            237000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Women"
+      >
+        <div>
+          <p>
+            Women
+          </p>
+          <p>
+            226000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Bring Back the Love"
+      >
+        <div>
+          <p>
+            Bring Back the Love
+          </p>
+          <p>
+            265000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/I'm Alone"
+      >
+        <div>
+          <p>
+            I'm Alone
+          </p>
+          <p>
+            243000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Don't Wanna Make You Cry"
+      >
+        <div>
+          <p>
+            Don't Wanna Make You Cry
+          </p>
+          <p>
+            130000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Fantasy"
+      >
+        <div>
+          <p>
+            Fantasy
+          </p>
+          <p>
+            210000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/I Understand"
+      >
+        <div>
+          <p>
+            I Understand
+          </p>
+          <p>
+            262000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Tired of Loving You"
+      >
+        <div>
+          <p>
+            Tired of Loving You
+          </p>
+          <p>
+            223000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Capture Your Heart"
+      >
+        <div>
+          <p>
+            Capture Your Heart
+          </p>
+          <p>
+            198000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/The Shepherd"
+      >
+        <div>
+          <p>
+            The Shepherd
+          </p>
+          <p>
+            280000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Strange Thing"
+      >
+        <div>
+          <p>
+            Strange Thing
+          </p>
+          <p>
+            250000
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders ReleaseItem 1`] = `
+<DocumentFragment>
+  <div>
+    <h2>
+      Another Night Time Flight
+    </h2>
+    <p>
+      no cover available
+    </p>
+    <p>
+      2009-06-28
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders ReleaseList 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="releases"
+  >
+    <div>
+      <a
+        href="/release/Blue Blue Blue/12503eef-7fca-4322-9012-2057995aaba7"
+      >
+        <div>
+          <h2>
+            Another Night Time Flight
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            2009-06-28
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/1904a7ad-ca50-44f5-9b59-a6ed6d43c93c"
+      >
+        <div>
+          <h2>
+            Cookie In A Jar
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1975
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/1ef2a5c7-6fae-4857-8408-4f8f2606a8e4"
+      >
+        <div>
+          <h2>
+            Blue
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1973
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/2424deff-a37c-45c7-a91a-02e698b06ac8"
+      >
+        <div>
+          <h2>
+            Fools' Party
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/2d4665e6-b974-42fe-b68e-1a3e3648a44c"
+      >
+        <div>
+          <h2>
+            Lonesome
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1974
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/4674b1b7-7713-4d6f-a801-5cfc059a699d"
+      >
+        <div>
+          <h2>
+            Women
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1977-11-18
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/50e56a40-6ae1-4a30-829a-9e18254b0c63"
+      >
+        <div>
+          <h2>
+            Danger Sign
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1979
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/5384a3aa-a636-4ecf-a4a1-549c95cbf86e"
+      >
+        <div>
+          <h2>
+            Another Night Time Flight / I'm Alone
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1977
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/65779fd8-4020-44dd-af98-3265383e1f65"
+      >
+        <div>
+          <h2>
+            Bring Back The Love
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1977
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/685ebc53-4d42-44a9-921d-fd1692b5e650"
+      >
+        <div>
+          <h2>
+            The L.A Sessions 1979-1982
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/6f22fb54-e79a-4169-9c99-3b0c71873a6f"
+      >
+        <div>
+          <h2>
+            Love Sings
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1979
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/7090dd71-99d7-4518-a388-f553d510faa5"
+      >
+        <div>
+          <h2>
+            Stranger's Town
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1979
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/79e52dd3-179e-48c0-9403-072a5e8afee0"
+      >
+        <div>
+          <h2>
+            Gonna Capture Your Heart
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1977
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/931b833d-fa37-479e-a4c4-637420d997c0"
+      >
+        <div>
+          <h2>
+            Life in the Navy
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1974
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/a4c2c954-b6c6-46b6-8965-646fac7da85e"
+      >
+        <div>
+          <h2>
+            Another Night Time Flight
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1977
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/a5910dd8-0f65-461e-a3cf-8876fe4114de"
+      >
+        <div>
+          <h2>
+            I Wanna Go To New York
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1984
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/ba9e5911-456d-4c18-aafa-57bcc807767f"
+      >
+        <div>
+          <h2>
+            Red Light Song
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1973
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/d67af23c-d8ec-4081-ab16-23e29d91c5cd"
+      >
+        <div>
+          <h2>
+            Round And Round
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1975
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/e6e90a5d-614b-472e-b284-1dcd68824af3"
+      >
+        <div>
+          <h2>
+            Country Blue
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/f15c3cde-a262-4cf3-b3cc-7f865768cf22"
+      >
+        <div>
+          <h2>
+            Blue
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            2002
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/f4b824dc-75a5-40ef-ae74-dde78b68aa46"
+      >
+        <div>
+          <h2>
+            Don't Wanna Make You Cry / Moonlight
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            1982
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/f66c7755-ec0a-4c22-bcd6-4e795797d3d5"
+      >
+        <div>
+          <h2>
+            Blue
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/release/Blue Blue Blue/f8971ae7-bc9e-42df-9b31-529b9a92d99a"
+      >
+        <div>
+          <h2>
+            Life in the Navy
+          </h2>
+          <p>
+            no cover available
+          </p>
+          <p>
+            2002
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
 </DocumentFragment>
 `;
