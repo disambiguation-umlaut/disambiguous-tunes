@@ -22,7 +22,9 @@ describe('ArtistPage container', () => {
   it('fetches and display a list of releases', async() => {
     render(
       <MemoryRouter>
-        <ArtistPage match={{ params: { id: '3ce0a4ca-7e5a-44bf-bffe-913cd1461771' } }} />
+        <ArtistPage 
+          match={{ params: { id: '3ce0a4ca-7e5a-44bf-bffe-913cd1461771', name: 'Andrew' } }}
+        />
       </MemoryRouter>
     );
 
