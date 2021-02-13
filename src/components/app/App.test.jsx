@@ -3,11 +3,14 @@ import { render, cleanup } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import blueReleaseApi from '../../fixtures/blueReleaseApi.json';
 import lyricsApi from '../../fixtures/lyricsApi.json';
+import blueRecordingApi from '../../fixtures/blueRecordingApi.json';
 import App from './App';
 import Header from '../Header/Header';
 import ReleaseItem from '../Artist/ReleaseItem';
 import ReleaseList from '../Artist/ReleaseList';
 import Lyrics from '../Lyrics/Lyrics';
+import RecordingItem from '../Release/RecordingItem';
+import RecordingList from '../Release/RecordingList';
 
 describe('App component', () => {
   afterEach(() => cleanup());
@@ -56,5 +59,15 @@ describe('App component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it('renders RecordingList', () => {
+    const { asFragment } = render(
+      <BrowserRouter>
+        <RecordingList 
+          recordings={blueRecordingApi.recordings} 
+          artist={'Blue Blue Blue'}/>
+      </BrowserRouter>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
   
 });

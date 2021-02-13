@@ -117,6 +117,169 @@ Oh freeze on freeze on freeze on bone to bone
 </DocumentFragment>
 `;
 
+exports[`App component renders RecordingList 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="recordings"
+  >
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Another Night Time Flight"
+      >
+        <div>
+          <p>
+            Another Night Time Flight
+          </p>
+          <p>
+            237000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Women"
+      >
+        <div>
+          <p>
+            Women
+          </p>
+          <p>
+            226000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Bring Back the Love"
+      >
+        <div>
+          <p>
+            Bring Back the Love
+          </p>
+          <p>
+            265000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/I'm Alone"
+      >
+        <div>
+          <p>
+            I'm Alone
+          </p>
+          <p>
+            243000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Don't Wanna Make You Cry"
+      >
+        <div>
+          <p>
+            Don't Wanna Make You Cry
+          </p>
+          <p>
+            130000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Fantasy"
+      >
+        <div>
+          <p>
+            Fantasy
+          </p>
+          <p>
+            210000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/I Understand"
+      >
+        <div>
+          <p>
+            I Understand
+          </p>
+          <p>
+            262000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Tired of Loving You"
+      >
+        <div>
+          <p>
+            Tired of Loving You
+          </p>
+          <p>
+            223000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Capture Your Heart"
+      >
+        <div>
+          <p>
+            Capture Your Heart
+          </p>
+          <p>
+            198000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/The Shepherd"
+      >
+        <div>
+          <p>
+            The Shepherd
+          </p>
+          <p>
+            280000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a
+        href="/lyrics/Blue Blue Blue/Strange Thing"
+      >
+        <div>
+          <p>
+            Strange Thing
+          </p>
+          <p>
+            250000
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`App component renders ReleaseItem 1`] = `
 <DocumentFragment>
   <div>
