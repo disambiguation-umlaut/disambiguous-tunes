@@ -34,6 +34,18 @@ exports[`App component renders App 1`] = `
 </DocumentFragment>
 `;
 
+exports[`App component renders ArtistItem 1`] = `
+<DocumentFragment>
+  <div>
+    <h2 />
+    <p>
+       - 
+    </p>
+    <p />
+  </div>
+</DocumentFragment>
+`;
+
 exports[`App component renders ArtistList 1`] = `
 <DocumentFragment>
   <div

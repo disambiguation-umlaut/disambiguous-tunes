@@ -93,5 +93,15 @@ describe('App component', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('renders ArtistItem', () => {
+    const { asFragment } = render(
+      <BrowserRouter>
+        <ArtistItem 
+          {...blueApi.artists} />
+      </BrowserRouter>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
   
 });
