@@ -10,8 +10,9 @@ const Buttons = ({ count, handleIncrease, handleDecrease }) => {
         count === 1
           ?
           <div>
-            <button onClick={handleIncrease}>Next</button>
+            <button style={{ display: 'none' }} onClick={handleDecrease}>Previous</button>
             <span data-testid="span">Page {count}</span>
+            <button onClick={handleIncrease}>Next</button>
           </div>
           :
           <div>
