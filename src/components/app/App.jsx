@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css';
 import Header from '../Header/Header';
 import SearchPage from '../../container/SearchPage';
 import ArtistPage from '../../container/ArtistPage';
