@@ -11,7 +11,7 @@ const LyricsPage = ({ match }) => {
   if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
-    <div data-testid="lyrics">
+    <div className={styles.lyricspage} data-testid="lyrics">
       <Lyrics lyrics={lyrics.lyrics} />
     </div>
   );

@@ -28,8 +28,8 @@ export const getRecording = (id) => {
   return fetch(`${URL}recording?release=${id}&fmt=json`)
     .then(res => res.json())
     .then(({ recordings }) => recordings.map(recording => ({
-      title: recording.title ? recording.title : '???',
-      length: recording.length ? recording.length : '???'
+      title: recording.title ? recording.title : 'Untitled',
+      length: recording.length ? recording.length : ''
     })));
 };
 
