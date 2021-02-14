@@ -4,7 +4,7 @@ global.fetch = require('node-fetch');
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import LandingPage from './LandingPage';
+import SearchPage from './SearchPage';
 import blueApi from '../fixtures/blueApi.json';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
@@ -15,14 +15,14 @@ const server = setupServer(
   })
 );
 
-describe('LandingPage container', () => {
+describe('SearchPage container', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
 
   it('fetches and displays a list of artists', async() => {
     render(
       <MemoryRouter>
-        <LandingPage />
+        <SearchPage />
       </MemoryRouter>
     );
 

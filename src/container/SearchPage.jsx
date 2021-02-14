@@ -5,7 +5,7 @@ import Buttons from '../components/Buttons/Buttons';
 import { useArtists, useButtons } from '../state/hooks';
 import { useLocation } from 'react-router-dom';
 
-const LandingPage = () => {
+const SearchPage = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const { count, setCount, handleIncrease, handleDecrease } = useButtons();
@@ -34,4 +34,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default SearchPage;

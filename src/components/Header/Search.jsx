@@ -9,7 +9,7 @@ const Search = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    history.push(`/?search=${search}`);
+    history.push(`/landing/?search=${search}`);
   };
 
   return (
