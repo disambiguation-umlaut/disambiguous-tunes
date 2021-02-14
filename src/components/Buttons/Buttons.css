@@ -1,0 +1,13 @@
+.buttons {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.count {
+    margin-left: 1%;
+    margin-right: 1%;
+    font-family: Spartan;
+    font-weight: 600;
+    font-size: 14pt;
+    color: darkslategray;
+}
