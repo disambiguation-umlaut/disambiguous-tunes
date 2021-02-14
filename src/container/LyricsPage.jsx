@@ -8,7 +8,7 @@ import styles from './Containers.css';
 const LyricsPage = ({ match }) => {
   const { lyrics, loading } = useLyrics(match.params.artist, match.params.title);
 
-  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
+  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="loading" />;
 
   return (
     <div className={styles.lyricspage} data-testid="lyrics">

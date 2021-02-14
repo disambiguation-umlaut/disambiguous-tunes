@@ -2,16 +2,20 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="header"
+  >
     <h1>
       DISAMBIGUOUS TUNES
     </h1>
     <a
       href="/"
     >
-      <button>
+      <span
+        class="home"
+      >
         Back to Home
-      </button>
+      </span>
     </a>
     <div>
       <form>
@@ -20,48 +24,35 @@ exports[`App component renders App 1`] = `
           type="text"
           value=""
         />
-        <button>
-          Search
+        <button
+          class="submit"
+        >
+          Submit
         </button>
       </form>
     </div>
   </div>
-  <div>
-    <div>
-      <div>
-        <button>
-          Next
-        </button>
-        <span
-          data-testid="span"
-        >
-          Page 1
-        </span>
-      </div>
-    </div>
-    <div
-      data-testid="artists"
-    />
-    <div>
-      <div>
-        <button>
-          Next
-        </button>
-        <span
-          data-testid="span"
-        >
-          Page 1
-        </span>
-      </div>
-    </div>
+  <div
+    class="home"
+  >
+    <h2>
+      Find your new favorite band
+    </h2>
+    <p
+      class="homep"
+    >
+      Search thousands of artists, new and old!
+    </p>
   </div>
 </DocumentFragment>
 `;
 
 exports[`App component renders ArtistItem 1`] = `
 <DocumentFragment>
-  <div>
-    <h2 />
+  <div
+    class="artist"
+  >
+    <h3 />
     <p>
        - 
     </p>
@@ -73,16 +64,19 @@ exports[`App component renders ArtistItem 1`] = `
 exports[`App component renders ArtistList 1`] = `
 <DocumentFragment>
   <div
+    class="artists"
     data-testid="artists"
   >
     <div>
       <a
         href="/artist/Blue/3ce0a4ca-7e5a-44bf-bffe-913cd1461771"
       >
-        <div>
-          <h2>
+        <div
+          class="artist"
+        >
+          <h3>
             Blue
-          </h2>
+          </h3>
           <p>
              - 
           </p>
@@ -96,16 +90,20 @@ exports[`App component renders ArtistList 1`] = `
 
 exports[`App component renders Header 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="header"
+  >
     <h1>
       DISAMBIGUOUS TUNES
     </h1>
     <a
       href="/"
     >
-      <button>
+      <span
+        class="home"
+      >
         Back to Home
-      </button>
+      </span>
     </a>
     <div>
       <form>
@@ -114,8 +112,10 @@ exports[`App component renders Header 1`] = `
           type="text"
           value=""
         />
-        <button>
-          Search
+        <button
+          class="submit"
+        >
+          Submit
         </button>
       </form>
     </div>
@@ -177,13 +177,19 @@ Oh freeze on freeze on freeze on bone to bone
 
 exports[`App component renders RecordingItem 1`] = `
 <DocumentFragment>
-  <div>
-    <p>
+  <div
+    class="recording"
+  >
+    <span
+      class="recName"
+    >
       Another Night Time Flight
-    </p>
-    <p>
+    </span>
+    <span
+      class="recLength"
+    >
       3:57
-    </p>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -195,13 +201,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Another Night Time Flight"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Another Night Time Flight
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             3:57
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -209,13 +221,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Women"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Women
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             3:46
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -223,13 +241,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Bring Back the Love"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Bring Back the Love
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             4:25
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -237,13 +261,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/I'm Alone"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             I'm Alone
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             4:03
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -251,13 +281,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Don't Wanna Make You Cry"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Don't Wanna Make You Cry
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             2:10
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -265,13 +301,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Fantasy"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Fantasy
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             3:30
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -279,13 +321,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/I Understand"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             I Understand
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             4:22
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -293,13 +341,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Tired of Loving You"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Tired of Loving You
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             3:43
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -307,13 +361,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Capture Your Heart"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Capture Your Heart
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             3:18
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -321,13 +381,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/The Shepherd"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             The Shepherd
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             4:40
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -335,13 +401,19 @@ exports[`App component renders RecordingList 1`] = `
       <a
         href="/lyrics/Blue Blue Blue/Strange Thing"
       >
-        <div>
-          <p>
+        <div
+          class="recording"
+        >
+          <span
+            class="recName"
+          >
             Strange Thing
-          </p>
-          <p>
+          </span>
+          <span
+            class="recLength"
+          >
             4:10
-          </p>
+          </span>
         </div>
       </a>
     </div>
@@ -351,13 +423,18 @@ exports[`App component renders RecordingList 1`] = `
 
 exports[`App component renders ReleaseItem 1`] = `
 <DocumentFragment>
-  <div>
-    <h2>
+  <div
+    class="release"
+  >
+    <h2
+      class="releaseTitle"
+    >
       Another Night Time Flight
     </h2>
-    <p>
-      no cover available
-    </p>
+    <img
+      alt="No Album Cover Found"
+      src="/musicPlaceholder.jpg"
+    />
     <p>
       2009-06-28
     </p>
@@ -368,19 +445,25 @@ exports[`App component renders ReleaseItem 1`] = `
 exports[`App component renders ReleaseList 1`] = `
 <DocumentFragment>
   <div
+    class="releases"
     data-testid="releases"
   >
     <div>
       <a
         href="/release/Blue Blue Blue/12503eef-7fca-4322-9012-2057995aaba7"
       >
-        <div>
-          <h2>
+        <div
+          class="release"
+        >
+          <h2
+            class="releaseTitle"
+          >
             Another Night Time Flight
           </h2>
-          <p>
-            no cover available
-          </p>
+          <img
+            alt="No Album Cover Found"
+            src="/musicPlaceholder.jpg"
+          />
           <p>
             2009-06-28
           </p>
@@ -391,13 +474,18 @@ exports[`App component renders ReleaseList 1`] = `
       <a
         href="/release/Blue Blue Blue/1904a7ad-ca50-44f5-9b59-a6ed6d43c93c"
       >
-        <div>
-          <h2>
+        <div
+          class="release"
+        >
+          <h2
+            class="releaseTitle"
+          >
             Cookie In A Jar
           </h2>
-          <p>
-            no cover available
-          </p>
+          <img
+            alt="No Album Cover Found"
+            src="/musicPlaceholder.jpg"
+          />
           <p>
             1975
           </p>

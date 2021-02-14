@@ -8,7 +8,7 @@ import styles from './Containers.css';
 const ArtistPage = ({ match }) => {
   const { loading, releases } = useReleases(match.params.id);
 
-  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
+  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="loading" />;
 
   return (
     <div className={styles.artistpage}>
