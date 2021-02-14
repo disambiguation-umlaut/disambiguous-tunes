@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 .header {
     margin: 0;
     text-align: center;
     height: 150px;
-    border: 2px solid red;
+    background-color: darkslategray;
+    border: solid 1px darkslategray;
+}
+
+h1 {
+    margin-top: 1%;
+    font-family: Russo One;
+    font-size: 50pt;
+    letter-spacing: 1pt;
+    color: gainsboro;
+    text-shadow: 0px 0px 20px darkcyan;
 }
