@@ -125,7 +125,7 @@ exports[`App component renders Header 1`] = `
 
 exports[`App component renders Lyrics 1`] = `
 <DocumentFragment>
-  <div>
+  <pre>
     <p>
       I had this bitch you see, she made lies to me
 Her deceit, oh, it gave me a chill
@@ -171,7 +171,7 @@ You know they'd like to try anything that comes into your mind
 
 Oh freeze on freeze on freeze on bone to bone
     </p>
-  </div>
+  </pre>
 </DocumentFragment>
 `;
 

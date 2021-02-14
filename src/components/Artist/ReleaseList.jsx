@@ -25,7 +25,7 @@ const ReleaseList = ({ releases, artist }) => {
 
 ReleaseList.propTypes = {
   artist: PropTypes.string.isRequired,
-  releases: PropTypes.shape(
+  releases: PropTypes.arrayOf(
     PropTypes.shape(
       {
         id: PropTypes.string, 

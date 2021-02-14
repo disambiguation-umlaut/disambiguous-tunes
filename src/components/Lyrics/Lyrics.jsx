@@ -7,9 +7,9 @@ const Lyrics = ({ lyrics }) => {
   if(lyrics === '') return <p>No Lyrics Found</p>;
 
   return (
-    <div>
+    <pre>
       <p>{lyrics}</p>  
-    </div>
+    </pre>
   );
 };
 
