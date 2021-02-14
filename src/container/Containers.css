@@ -1,6 +1,17 @@
 .home {
     height: 100%;
-    margin-top: 5%;
+    margin-top: 20%;
     text-align: center;
-    border: solid 1px red;
+}
+
+h2 {
+    font-family: Spartan;
+    font-size: 40pt;
+    font-weight: 600;
+    color: darkslategray;
+}
+
+.homep {
+    font-family: Spartan;
+    font-size: 20pt;
 }
