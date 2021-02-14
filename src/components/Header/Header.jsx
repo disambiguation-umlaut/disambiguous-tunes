@@ -2,13 +2,14 @@
 import React from 'react';
 import Search from './Search';
 import { Link } from 'react-router-dom';
+import styles from './Header.css';
 
 const Header = () => {
  
   return (
-    <div>
+    <div className={styles.header}>
       <h1>DISAMBIGUOUS TUNES</h1>
-      <Link to="/"><button>Back to Home</button></Link>
+      <Link to="/"><span className={styles.home}>Back to Home</span></Link>
       <Search />
     </div>
   );

@@ -1,22 +1,24 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Buttons.css';
 
 const Buttons = ({ count, handleIncrease, handleDecrease }) => {
 
   return (
-    <div>
+    <div className={styles.buttons}>
       {
         count === 1
           ?
           <div>
+            <button style={{ display: 'none' }} onClick={handleDecrease}>Previous</button>
+            <span className={styles.count} data-testid="span">Page {count}</span>
             <button onClick={handleIncrease}>Next</button>
-            <span data-testid="span">Page {count}</span>
           </div>
           :
           <div>
             <button onClick={handleDecrease}>Previous</button>
-            <span>Page {count}</span>
+            <span className={styles.count}>Page {count}</span>
             <button onClick={handleIncrease}>Next</button>
           </div>
       }

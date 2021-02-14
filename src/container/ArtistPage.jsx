@@ -1,15 +1,17 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReleaseList from '../components/Artist/ReleaseList';
 import { useReleases } from '../state/hooks';
+import styles from './Containers.css';
 
 const ArtistPage = ({ match }) => {
   const { loading, releases } = useReleases(match.params.id);
 
-  if(loading) return <p>Loading</p>;
+  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
-    <div>
+    <div className={styles.artistpage}>
       <ReleaseList
         releases={releases}
         artist={match.params.name}

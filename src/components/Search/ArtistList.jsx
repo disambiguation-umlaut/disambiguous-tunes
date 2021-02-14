@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ArtistItem from './ArtistItem';
+import styles from './Artist.css';
 
 const ArtistList = ({ artists }) => {
   const artistElements = artists.map(artist => (
@@ -15,7 +16,7 @@ const ArtistList = ({ artists }) => {
   ));
 
   return (
-    <div data-testid="artists">
+    <div className={styles.artists}data-testid="artists">
       {artistElements}
     </div>
   );

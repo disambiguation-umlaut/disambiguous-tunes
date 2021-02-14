@@ -1,0 +1,62 @@
+.header {
+    margin: 0;
+    text-align: center;
+    height: 150px;
+    background-color: darkslategray;
+    border: solid 1px darkslategray;
+    box-shadow: 0px 8px 0px darkcyan;
+}
+
+h1 {
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-family: Russo One;
+    font-size: 50pt;
+    letter-spacing: 1pt;
+    color: gainsboro;
+    text-shadow: 0px 0px 20px darkcyan;
+}
+
+.home {
+    float: left;
+    margin-top: 25px;
+    margin-left: 18px;
+    font-family: Spartan;
+    text-decoration: none;
+    color: white;
+}
+
+.home:hover {
+    color: paleturquoise;
+    text-shadow: 0px 0px 15px white;
+    transition-duration: 1s;
+}
+
+input {
+    width: 60%;
+    height: 20pt;
+    margin-top: 10px;
+    margin-right: 1%;
+    font-family: Spartan;
+    font-size: 14pt;
+    border: solid 2px darkcyan;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px;
+    font-family: Spartan;
+    font-size: 14pt;
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: paleturquoise;
+    box-shadow: 0px 0px 10px white;
+    transition-duration: 1s;
+    cursor: pointer;
+}

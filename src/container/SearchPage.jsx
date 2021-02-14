@@ -4,6 +4,7 @@ import ArtistList from '../components/Search/ArtistList';
 import Buttons from '../components/Buttons/Buttons';
 import { useArtists, useButtons } from '../state/hooks';
 import { useLocation } from 'react-router-dom';
+import styles from './Containers.css';
 
 const SearchPage = () => {
   const location = useLocation();
@@ -11,10 +12,10 @@ const SearchPage = () => {
   const { count, setCount, handleIncrease, handleDecrease } = useButtons();
   const { loading, artists } = useArtists(params.get('search'), count);
 
-  if(loading) return <p data-testid="loading">Loading</p>;
+  if(loading) return <img data-testid="loading" className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
-    <div>
+    <div className={styles.searchpage}>
       <Buttons 
         count={count}
         setCount={setCount}

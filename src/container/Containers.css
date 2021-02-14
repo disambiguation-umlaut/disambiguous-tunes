@@ -1,0 +1,34 @@
+.home {
+    height: 100%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+h2 {
+    font-family: Spartan;
+    font-size: 40pt;
+    font-weight: 600;
+    color: darkslategray;
+}
+
+.homep {
+    font-family: Spartan;
+    font-size: 20pt;
+}
+
+.searchpage, .artistpage {
+    margin-top: 2%;
+}
+
+.loading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+.releasepage, .lyricspage {
+    margin-top: 8%;
+    margin-right: 20%;
+    margin-left: 20%;
+}

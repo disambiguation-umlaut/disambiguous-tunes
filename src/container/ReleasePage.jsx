@@ -1,16 +1,18 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useRecording } from '../state/hooks';
 import RecordingList from '../components/Release/RecordingList';
-
+import styles from './Containers.css';
 
 const ReleasePage = ({ match }) => {
   const { loading, recordings } = useRecording(match.params.id);
   
-  if(loading) return <p>Loading</p>;
+  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
-    <div data-testid="recordings">
+    <div 
+      className={styles.releasepage} data-testid="recordings">
       <RecordingList 
         recordings={recordings}
         artist = {match.params.name}

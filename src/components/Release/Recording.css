@@ -1,0 +1,20 @@
+.recording {
+    margin-top: 2%;
+    padding: 3px;
+    font-family: Spartan;
+    text-align: center;
+    color: darkslategray;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.recName {
+    font-weight: 600;
+    margin-right: 1%;
+    color: darkcyan;
+}
+
+.recording:hover {
+    background-color: darkslategray;
+    color: paleturquoise;
+}
