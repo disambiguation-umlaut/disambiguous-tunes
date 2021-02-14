@@ -16,7 +16,7 @@ h2 {
     font-size: 20pt;
 }
 
-.searchpage, .releases {
+.searchpage, .artistpage {
     margin-top: 2%;
 }
 
@@ -25,4 +25,10 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20%;
+}
+
+.releasepage {
+    margin-top: 8%;
+    margin-right: 20%;
+    margin-left: 20%;
 }

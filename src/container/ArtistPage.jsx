@@ -11,7 +11,7 @@ const ArtistPage = ({ match }) => {
   if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
-    <div className={styles.releases}>
+    <div className={styles.artistpage}>
       <ReleaseList
         releases={releases}
         artist={match.params.name}
