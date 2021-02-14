@@ -2,10 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from '../Header/Header';
-import LandingPage from '../../container/LandingPage';
+import SearchPage from '../../container/SearchPage';
 import ArtistPage from '../../container/ArtistPage';
 import ReleasePage from '../../container/ReleasePage';
 import LyricsPage from '../../container/LyricsPage';
+import HomePage from '../../container/HomePage';
 
 export default function App() {
 
@@ -14,8 +15,11 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/"
-            component={LandingPage} 
+          <Route exact path="/" 
+            component={HomePage} 
+          />
+          <Route path="/landing"
+            component={SearchPage} 
           />
           <Route path="/artist/:name/:id" 
             component={ArtistPage} 

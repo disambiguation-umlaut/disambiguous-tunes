@@ -9,7 +9,11 @@ const Search = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    history.push(`/?search=${search}`);
+    if(!search || /^\s*$/.test(search) || /^\d+$/.test(search)) {
+      alert('Artist not found');
+    } else {
+      history.push(`/landing/?search=${search}`);
+    }
   };
 
   return (
