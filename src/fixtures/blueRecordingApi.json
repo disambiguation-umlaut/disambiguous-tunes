@@ -5,7 +5,7 @@
         {
             "first-release-date": "1977",
             "video": false,
-            "disambiguation": "",
+            "disambiguation": "w",
             "title": "Another Night Time Flight",
             "id": "07aa67fa-d4b1-49a7-af94-48091648b118",
             "length": 237000
@@ -14,20 +14,20 @@
             "length": 226000,
             "title": "Women",
             "id": "0c9b5f30-bbc3-4414-b83b-1a61dea24c6e",
-            "disambiguation": "",
+            "disambiguation": "w",
             "first-release-date": "1977",
             "video": false
         },
         {
             "video": false,
             "first-release-date": "1977",
-            "disambiguation": "",
+            "disambiguation": "w",
             "id": "2477f6bb-560a-4fcb-8d7e-e4288eb9655f",
             "title": "Bring Back the Love",
             "length": 265000
         },
         {
-            "disambiguation": "",
+            "disambiguation": "w",
             "video": false,
             "first-release-date": "1977",
             "length": 243000,
@@ -40,7 +40,7 @@
             "length": 130000,
             "video": false,
             "first-release-date": "2009-06-28",
-            "disambiguation": ""
+            "disambiguation": "w"
         },
         {
             "id": "696bb7b6-c0c7-4abb-aebc-310daeb88247",
@@ -48,20 +48,20 @@
             "length": 210000,
             "first-release-date": "1977",
             "video": false,
-            "disambiguation": ""
+            "disambiguation": "w"
         },
         {
             "length": 262000,
             "title": "I Understand",
             "id": "a6fbe7e7-247d-4b4a-aa30-188a6a97ce24",
-            "disambiguation": "",
+            "disambiguation": "w",
             "video": false,
             "first-release-date": "1977"
         },
         {
             "video": false,
             "first-release-date": "1977",
-            "disambiguation": "",
+            "disambiguation": "w",
             "title": "Tired of Loving You",
             "id": "a850e498-df22-479c-86a1-5d0e57406f95",
             "length": 223000
@@ -72,12 +72,12 @@
             "length": 198000,
             "first-release-date": "1977",
             "video": false,
-            "disambiguation": ""
+            "disambiguation": "w"
         },
         {
             "video": false,
             "first-release-date": "1977",
-            "disambiguation": "",
+            "disambiguation": "w",
             "id": "c0224ceb-279d-4be7-827a-f7814db22aa8",
             "title": "The Shepherd",
             "length": 280000
@@ -86,7 +86,7 @@
             "length": 250000,
             "title": "Strange Thing",
             "id": "f3dc4c0a-6455-4cb2-8da9-64885bce1fde",
-            "disambiguation": "",
+            "disambiguation": "w",
             "video": false,
             "first-release-date": "1977"
         }
