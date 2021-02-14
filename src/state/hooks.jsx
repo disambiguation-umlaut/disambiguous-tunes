@@ -9,15 +9,12 @@ export const useArtists = (query, pageNumber) => {
   const offset = (pageNumber * 25) - 24;
 
   useEffect(() => {
-    if(query === null) {
-      query = ' ';
-      setLoading(false);
-    }
     getArtist(query, offset)
       .then(artists => {
         setArtists(artists);
         setLoading(false);
       });
+        
   }, [query, offset]);
 
   return {
