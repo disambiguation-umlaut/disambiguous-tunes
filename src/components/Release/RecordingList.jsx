@@ -17,7 +17,7 @@ const RecordingList = ({ recordings, artist }) => {
   ));
 
   return (
-    <div data-testid="recordings">
+    <div>
       {recordingElements}
     </div>
   );

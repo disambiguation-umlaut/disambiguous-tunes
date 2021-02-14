@@ -10,7 +10,7 @@ const LyricsPage = ({ match }) => {
   if(loading) return <p>Loading</p>;
 
   return (
-    <div>
+    <div data-testid="lyrics">
       <Lyrics lyrics={lyrics.lyrics} />
     </div>
   );

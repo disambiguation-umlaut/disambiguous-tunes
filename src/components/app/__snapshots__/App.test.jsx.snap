@@ -125,9 +125,7 @@ exports[`App component renders Header 1`] = `
 
 exports[`App component renders Lyrics 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="lyrics"
-  >
+  <div>
     <p>
       I had this bitch you see, she made lies to me
 Her deceit, oh, it gave me a chill
@@ -184,7 +182,7 @@ exports[`App component renders RecordingItem 1`] = `
       Another Night Time Flight
     </p>
     <p>
-      237000
+      3:57
     </p>
   </div>
 </DocumentFragment>
@@ -192,9 +190,7 @@ exports[`App component renders RecordingItem 1`] = `
 
 exports[`App component renders RecordingList 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="recordings"
-  >
+  <div>
     <div>
       <a
         href="/lyrics/Blue Blue Blue/Another Night Time Flight"
@@ -204,7 +200,7 @@ exports[`App component renders RecordingList 1`] = `
             Another Night Time Flight
           </p>
           <p>
-            237000
+            3:57
           </p>
         </div>
       </a>
@@ -218,7 +214,7 @@ exports[`App component renders RecordingList 1`] = `
             Women
           </p>
           <p>
-            226000
+            3:46
           </p>
         </div>
       </a>
@@ -232,7 +228,7 @@ exports[`App component renders RecordingList 1`] = `
             Bring Back the Love
           </p>
           <p>
-            265000
+            4:25
           </p>
         </div>
       </a>
@@ -246,7 +242,7 @@ exports[`App component renders RecordingList 1`] = `
             I'm Alone
           </p>
           <p>
-            243000
+            4:03
           </p>
         </div>
       </a>
@@ -260,7 +256,7 @@ exports[`App component renders RecordingList 1`] = `
             Don't Wanna Make You Cry
           </p>
           <p>
-            130000
+            2:10
           </p>
         </div>
       </a>
@@ -274,7 +270,7 @@ exports[`App component renders RecordingList 1`] = `
             Fantasy
           </p>
           <p>
-            210000
+            3:30
           </p>
         </div>
       </a>
@@ -288,7 +284,7 @@ exports[`App component renders RecordingList 1`] = `
             I Understand
           </p>
           <p>
-            262000
+            4:22
           </p>
         </div>
       </a>
@@ -302,7 +298,7 @@ exports[`App component renders RecordingList 1`] = `
             Tired of Loving You
           </p>
           <p>
-            223000
+            3:43
           </p>
         </div>
       </a>
@@ -316,7 +312,7 @@ exports[`App component renders RecordingList 1`] = `
             Capture Your Heart
           </p>
           <p>
-            198000
+            3:18
           </p>
         </div>
       </a>
@@ -330,7 +326,7 @@ exports[`App component renders RecordingList 1`] = `
             The Shepherd
           </p>
           <p>
-            280000
+            4:40
           </p>
         </div>
       </a>
@@ -344,7 +340,7 @@ exports[`App component renders RecordingList 1`] = `
             Strange Thing
           </p>
           <p>
-            250000
+            4:10
           </p>
         </div>
       </a>

@@ -10,7 +10,7 @@ const ReleasePage = ({ match }) => {
   if(loading) return <p>Loading</p>;
 
   return (
-    <div>
+    <div data-testid="recordings">
       <RecordingList 
         recordings={recordings}
         artist = {match.params.name}
