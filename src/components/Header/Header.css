@@ -19,8 +19,8 @@ h1 {
 
 .home {
     float: left;
-    margin-top: 2%;
-    margin-left: 1%;
+    margin-top: 25px;
+    margin-left: 18px;
     font-family: Spartan;
     text-decoration: none;
     color: white;
@@ -35,7 +35,7 @@ h1 {
 input {
     width: 60%;
     height: 20pt;
-    margin-top: 1%;
+    margin-top: 10px;
     margin-right: 1%;
     font-family: Spartan;
     font-size: 14pt;
