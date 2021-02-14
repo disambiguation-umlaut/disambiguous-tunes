@@ -3,11 +3,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReleaseList from '../components/Artist/ReleaseList';
 import { useReleases } from '../state/hooks';
+import styles from './Containers.css';
 
 const ArtistPage = ({ match }) => {
   const { loading, releases } = useReleases(match.params.id);
 
-  if(loading) return <img src="/LoadingSpinner.gif" alt="Loading" />;
+  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
     <div>

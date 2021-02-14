@@ -19,3 +19,10 @@ h2 {
 .searchpage {
     margin-top: 2%;
 }
+
+.loading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}

@@ -3,11 +3,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Lyrics from '../components/Lyrics/Lyrics';
 import { useLyrics } from '../state/hooks';
+import styles from './Containers.css';
 
 const LyricsPage = ({ match }) => {
   const { lyrics, loading } = useLyrics(match.params.artist, match.params.title);
 
-  if(loading) return <img src="/LoadingSpinner.gif" alt="Loading" />;
+  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
     <div data-testid="lyrics">
