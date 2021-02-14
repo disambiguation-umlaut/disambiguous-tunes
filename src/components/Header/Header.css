@@ -55,3 +55,10 @@ input {
     border: none;
     border-radius: 5px;
 }
+
+.submit:hover {
+    color: paleturquoise;
+    box-shadow: 0px 0px 10px white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
