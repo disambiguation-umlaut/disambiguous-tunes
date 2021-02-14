@@ -26,6 +26,8 @@ describe('SearchPage container', () => {
       </MemoryRouter>
     );
 
+    screen.getByAltText('loading');
+
     const listOfArtists = await screen.findByTestId('artists');
 
     return waitFor(() => {

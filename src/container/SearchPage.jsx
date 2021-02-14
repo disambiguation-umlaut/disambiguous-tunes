@@ -12,7 +12,7 @@ const SearchPage = () => {
   const { count, setCount, handleIncrease, handleDecrease } = useButtons();
   const { loading, artists } = useArtists(params.get('search'), count);
 
-  if(loading) return <img data-testid="loading" className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
+  if(loading) return <img data-testid="loading" className={styles.loading} src="/LoadingSpinner.gif" alt="loading" />;
 
   return (
     <div className={styles.searchpage}>

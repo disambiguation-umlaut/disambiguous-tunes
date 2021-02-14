@@ -8,7 +8,7 @@ import styles from './Containers.css';
 const ReleasePage = ({ match }) => {
   const { loading, recordings } = useRecording(match.params.id);
   
-  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="Loading" />;
+  if(loading) return <img className={styles.loading} src="/LoadingSpinner.gif" alt="loading" />;
 
   return (
     <div 
