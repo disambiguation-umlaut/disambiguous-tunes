@@ -1,0 +1,38 @@
+.releases {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+.release {
+    height: 375px;
+    width: 375px;
+    text-align: center;
+    border: solid 2px darkcyan;
+    border-radius: 15px;
+    color: darkslategray;
+    margin: 2%;
+}
+
+.releaseTitle {
+    color: darkcyan;
+    font-family: Russo One;
+    font-size: 20pt;
+}
+
+img {
+    height: 200px;
+}
+
+p {
+    font-family: Spartan;
+}
+
+.release:hover {
+    color: paleturquoise;
+    background-color: darkslategray;
+    border: solid 2px darkcyan;
+    transition-duration: 1s;
+}

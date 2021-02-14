@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReleaseItem from './ReleaseItem';
 import { Link } from 'react-router-dom';
+import styles from './Release.css';
 
 const ReleaseList = ({ releases, artist }) => {
   const releaseElements = releases.map(release => (
@@ -16,7 +17,7 @@ const ReleaseList = ({ releases, artist }) => {
   ));
 
   return (
-    <div data-testid="releases">
+    <div className={styles.releases} data-testid="releases">
       {releaseElements}
     </div>
   );

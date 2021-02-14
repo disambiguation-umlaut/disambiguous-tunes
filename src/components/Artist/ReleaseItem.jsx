@@ -7,18 +7,16 @@ import styles from './Release.css';
 const ReleaseItem = ({ release }) => {
   
   return (
-    <div>
+    <div className={styles.release}>
       <h2 className={styles.releaseTitle}>{release.title}</h2>
       {
         release.cover 
           ? 
           <img 
-            className={styles.cover}
             src={`http://coverartarchive.org/release/${release.id}/front`} 
             alt={release.title} />
           :
           <img
-            className={styles.cover}
             src="/musicPlaceholder.jpg"
             alt="No Album Cover Found" />
       }
