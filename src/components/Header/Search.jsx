@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
+import styles from './Header.css';
 
 const Search = () => {
   const [search, setSearch] = useState('');
@@ -25,7 +26,7 @@ const Search = () => {
           value = {search}
           placeholder="Search..." 
         />
-        <button>Search</button>
+        <button className={styles.submit}>Submit</button>
       </form>
     </div>
   );

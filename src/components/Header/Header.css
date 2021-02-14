@@ -12,7 +12,7 @@
 
 h1 {
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 0;
     font-family: Russo One;
     font-size: 50pt;
     letter-spacing: 1pt;
@@ -22,6 +22,7 @@ h1 {
 
 .home {
     float: left;
+    margin-top: 2%;
     margin-left: 1%;
     font-family: Spartan;
     text-decoration: none;
@@ -32,4 +33,25 @@ h1 {
     color: paleturquoise;
     text-shadow: 0px 0px 15px white;
     transition-duration: 1s;
+}
+
+input {
+    width: 60%;
+    height: 20pt;
+    margin-top: 1%;
+    margin-right: 1%;
+    font-family: Spartan;
+    font-size: 14pt;
+    border: solid 2px darkcyan;
+    border-radius: 5px;
+}
+
+.submit {
+    padding: 5px;
+    font-family: Spartan;
+    font-size: 14pt;
+    color: whitesmoke;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 5px;
 }
