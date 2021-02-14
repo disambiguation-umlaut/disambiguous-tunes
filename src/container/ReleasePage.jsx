@@ -7,7 +7,7 @@ import RecordingList from '../components/Release/RecordingList';
 const ReleasePage = ({ match }) => {
   const { loading, recordings } = useRecording(match.params.id);
   
-  if(loading) return <p>Loading</p>;
+  if(loading) return <img src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
     <div data-testid="recordings">

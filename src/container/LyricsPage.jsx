@@ -7,7 +7,7 @@ import { useLyrics } from '../state/hooks';
 const LyricsPage = ({ match }) => {
   const { lyrics, loading } = useLyrics(match.params.artist, match.params.title);
 
-  if(loading) return <p>Loading</p>;
+  if(loading) return <img src="/LoadingSpinner.gif" alt="Loading" />;
 
   return (
     <div data-testid="lyrics">
