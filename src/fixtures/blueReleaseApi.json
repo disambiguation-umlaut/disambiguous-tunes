@@ -38,7 +38,7 @@
                 "count": 0,
                 "darkened": false,
                 "back": false,
-                "artwork": false
+                "artwork": true
             }
         },
         {
@@ -66,7 +66,7 @@
                 }
             ],
             "cover-art-archive": {
-                "artwork": false,
+                "artwork": true,
                 "front": false,
                 "darkened": false,
                 "count": 0,

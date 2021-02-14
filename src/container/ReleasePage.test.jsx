@@ -11,7 +11,7 @@ import { setupServer } from 'msw/node';
 
 const server = setupServer(
   rest.get('http://musicbrainz.org/ws/2/recording', (req, res, ctx) => {
-    return res(ctx.json(blueRecordingApi));
+    return res(ctx.json(blueRecordingApi.recordings));
   })
 );
 
